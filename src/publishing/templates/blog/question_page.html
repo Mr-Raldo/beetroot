@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}
+ template-questionpage 
+{% endblock %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Question and Answer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </div>
+</nav>
+<!-- * Question List -->
+<div class="container  py-5">
+    <style>
+        .card-text a {
+            text-decoration: none; /* Remove underline */
+            color: blue; /* Change the color to black */
+        }
+    </style>
+                <!-- {% for question in page.get_questions %}
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            
+                            <h4 class="card-title">{{page.question_text}}</h4>
+                            <p class="card-text"></p>
+                        
+                            <p class="card-text">
+                                <a href="" class="mr-2">@{{page.user}}</a>
+                                <a href="" class="mr-2"><ul>
+                                    {% for answer in page.get_answers %}
+                                    <li>{{ answer.answer_text }}</li>
+                                {% empty %}
+                                    <li>No answers yet.</li>
+                                {% endfor %}
+                                </ul></a>
+                                <a href="" class="mr-2">10 Comments</a>
+                            </p>
+
+                        </div>
+                    </div>
+                    {% endfor %} -->
+        {% for question in page.get_questions %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ question.topic }}</h4>
+                        <h6 class="card-title">{{ question.question_text }}</h6>
+                        <p class="card-text">
+                            <a href="" class="mr-2">@{{ question.user }}</a>
+                            <ul>
+                                {% for answer in question.get_answers %}
+                                    <li>{{ answer.answer_text }}</li>
+                                {% empty %}
+                                    <li>No answers yet.</li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+        {% endfor %}
+
+           
+        <a href="">Add Answer</a>
+
+        <!-- add_answer.html -->
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+        </form>
+        
+           
+        
+
+</div>
+
+   
+{% endblock %}

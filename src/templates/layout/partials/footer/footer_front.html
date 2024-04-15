@@ -1,0 +1,53 @@
+{% load static %}
+
+<footer class="landing-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gx-0 gy-4 g-md-5">
+        <div class="col-lg-9  col-md-8">
+          <a href="{% url 'landing-page' %}" class="app-brand-link mb-4">
+            <span class="app-brand-logo demo me-2"> {% include 'partials/logo.html' with bgcolor="#EDA132" %}</span>
+            {% comment %} <span class="app-brand-text demo footer-link fw-bold">{% get_theme_variables 'template_name' %}</span> {% endcomment %}
+          </a>
+          <p class="footer-text footer-logo-description mb-4">
+            SimplyLedgers is the most powerful & comprehensive Zimbabwean solutions solving agribusiness information systems anticipated logistics problems that arise in the agriculture value chain by utilizing blockchain and IOT technologies. We aim to transform agriculture enabled communities by improving social information flow between communities,enabling business processes from production to logistics to last person in the value chain and integrated data distribution in the agriculture space.
+          </p>
+          <form>
+            <div class="d-flex mt-2 gap-3">
+              <div class="form-floating form-floating-outline w-px-250">
+                <input type="text" class="form-control bg-transparent text-white" id="newsletter-1" placeholder="Your email" />
+                <label for="newsletter-1">Subscribe to newsletter</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h6 class="footer-title mb-4">Download our app</h6>
+          <a href="javascript:void(0);" class="d-block footer-link mb-3 pb-2"><img src="{% static 'img/front-pages/landing-page/apple-icon.png' %}" alt="apple icon" /></a>
+          <a href="javascript:void(0);" class="d-block footer-link"><img src="{% static 'img/front-pages/landing-page/google-play-icon.png' %}" alt="google play icon" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom py-3">
+    <div class="container d-flex flex-wrap justify-content-between flex-md-row flex-column text-center text-md-start">
+      <div class="mb-2 mb-md-0">
+        <span class="footer-text">©
+          <script>
+          document.write(new Date().getFullYear());
+
+          </script>
+          , Made with <i class="tf-icons mdi mdi-heart text-danger"></i> by
+        </span>
+        <a href="{% get_theme_variables 'creator_url' %}" target="_blank" class="footer-link fw-medium footer-theme-link">{% get_theme_variables 'creator_name' %}</a>
+      </div>
+      <div>
+        <a href="{% get_theme_variables 'github_url' %}" class="footer-link me-2" target="_blank"><i class="mdi mdi-github"></i></a>
+        <a href="{% get_theme_variables 'facebook_url' %}" class="footer-link me-2" target="_blank"><i class="mdi mdi-facebook"></i></a>
+        <a href="{% get_theme_variables 'twitter_url' %}" class="footer-link me-2" target="_blank"><i class="mdi mdi-twitter"></i></a>
+        <a href="{% get_theme_variables 'instagram_url' %}" class="footer-link" target="_blank"><i class='mdi mdi-instagram'></i></a>
+      </div>
+    </div>
+  </div>
+</footer>

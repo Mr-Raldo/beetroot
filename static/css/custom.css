@@ -1,0 +1,110 @@
+:root {
+    --w-login-fullscreen-background: radial-gradient(100% 300.28% at 100% 0%,#8e070f 0%,#e41c24 32.94%,#000000 49.9%,#67060c 50.2%,#e41c24 100%);
+
+    .login h1 {
+        color: hsl(0, 0%, 0%);
+    }
+    .w-field__label {
+        color: #000000;
+    }
+    .login .button{
+        background-color:#d8101d;
+    }
+    .button:hover {
+        
+        border-color: #67060c;
+        background-color: #67060c;
+    }
+    input[type=date]:hover, input[type=datetime-local]:hover, input[type=email]:hover, input[type=file]:hover, input[type=month]:hover, input[type=number]:hover, input[type=password]:hover, input[type=search]:hover, input[type=tel]:hover, input[type=text]:hover, input[type=time]:hover, input[type=url]:hover, input[type=week]:hover, textarea:hover{
+        border-color: #000000;
+        color: #000000;
+    }
+    w-field__input{
+        border-color: #000000;
+        color: #000000;
+    }
+    --w-color-border-button-outline-default: #67060c;
+    --w-color-focus: #8e070f;
+    .login .reset-password {
+        color: #000000;
+    }
+    .messages .success {
+        background-color: #e41c24;
+        color: var(--w-color-white);
+    }
+    
+
+}
+
+
+:root{
+    --w-font-sans: DM Sans;
+    --w-font-mono: Nunito;
+    
+    .sidebar-loading__inner, .sidebar__inner{
+        background-color: #E41C24;
+    }
+    .sidebar-nav-toggle--mobile {
+        background-color: #E41C24;
+    }
+    .sidebar-menu-item--active>a{
+        border-color: #ffffff;
+        background-color: #000000;
+    }
+    .w-summary{
+        color: #000000;
+    }
+    .w-header h1, .w-header h2{
+        color: #000000;
+    }
+    .w-panel__heading {
+        color:#e41c24;
+    }
+    .listing .title .title-wrapper a:hover, .listing .title h2 a:hover{
+        color: #e41c24 ;
+    }
+    .listing .title .title-wrapper a, .listing .title h2 a{
+        color: #000000;
+    }
+    .w-bg-surface-menus {
+        background-color:  #e41c24;
+    }
+    .sidebar-menu-item--active {
+        background-color: #000000(--w-color-surface-menu-item-active);
+        text-shadow: -1px -1px 0 var(--w-color-black-35);
+    }
+    .sidebar-footer {
+        background-color: #e41c24;
+        
+    }
+    .sidebar-menu-item sidebar-menu-item--active{
+        background-color: #e41c24;
+
+    }
+    .sidebar-main-menu w-scrollbar-thin{
+        background-color: #e41c24;
+    }
+
+    
+    body.ready .sidebar-menu-item__link:hover {
+        background-color: rgb(0, 0, 0); /* Change the background color to red on hover */
+    }
+    .sidebar-sub-menu-panel {
+        background-color: black;
+    }
+    .c-page-explorer__drawer{
+        background-color: black;
+    }
+    .c-page-explorer__header__title {
+        background-color: black;
+    }
+    .c-page-explorer__item {
+        background-color:  black;
+    }
+    .w-group:hover .group-hover\:w-text-black{
+        background-color:  black;
+    }
+    .sidebar-wagtail-branding__icon-wrapper:hover {
+        background-color:  black;
+    }
+}

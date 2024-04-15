@@ -1,0 +1,750 @@
+{
+  "menu": [
+
+    {
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons mdi mdi-home-outline",
+      "slug": "dashboard",
+      "submenu": [
+      {
+        "url": "index",
+        "name": "Analytics",
+        "icon": "menu-icon tf-icons mdi mdi-chart-timeline-variant",
+        "slug": "dashboard-analytics"
+      },
+      {
+        "url": "/app/ecommerce/dashboard",
+        "external": true,
+        "name": "Business Portal",
+        "icon": "menu-icon tf-icons mdi mdi-cart-outline",
+        "slug": "app-ecommerce-dashboard"
+      },
+        {
+          "url": "dashboard-crm",
+          "name": "Customer Channels",
+          "icon": "menu-icon tf-icons mdi mdi-chart-donut",
+          "slug": "dashboard-crm"
+        },
+        {
+          "url": "/app/ecommerce/dashboard",
+          "external": true,
+          "name": "Marketplace",
+          "icon": "menu-icon tf-icons mdi mdi-cart-outline",
+          "slug": "app-ecommerce-dashboard"
+        },
+        {
+          "url": "/app/logistics/dashboard",
+          "external": true,
+          "name": "Logistics",
+          "icon": "menu-icon tf-icons mdi mdi-truck-outline",
+          "slug": "app-logistics-dashboard"
+        },
+        {
+          "url": "/app/academy/dashboard",
+          "external": true,
+          "name": "School Management",
+          "icon": "menu-icon tf-icons mdi mdi-notebook-outline",
+          "slug": "app-academy-dashboard"
+        }
+        ,
+        {
+          "url": "/app/abattoir/dashboard",
+          "external": true,
+          "name": "Abattoir",
+          "icon": "menu-icon tf-icons mdi mdi-notebook-outline",
+          "slug": "app-academy-dashboard"
+        }
+      ]
+    },
+    {
+      "name": "Abattoir",
+      "slug": "app-ecommerce",
+      "icon": "menu-icon tf-icons mdi mdi-cart-outline",
+      "submenu": [
+        {
+          "url": "app-ecommerce-dashboard",
+          "name": "Dashboard",
+          "slug": "app-ecommerce-dashboard",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+
+        {
+          "name": "Producers",
+          "slug": "app-ecommerce-product",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+          {
+            "url": "app-abattoir-producers-list",
+            "name": "Producers List",
+            "slug": "app-abattoir-producers-list",
+            "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+          },
+          {
+            "url": "pages-account-settings-account",
+            "name": "Add Producer",
+            "slug": "pages-account-settings-account",
+            "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+          },
+            {
+              "url": "app-ecommerce-product-category-list",
+              "name": "Category List",
+              "slug": "app-ecommerce-product-category-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        },
+        {
+          "name": "Inventory",
+          "slug": "app-ecommerce-product",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "app-ecommerce-product-list",
+              "name": "Stock List",
+              "slug": "app-ecommerce-product-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-product-add",
+              "name": "Recieve Stock",
+              "slug": "app-ecommerce-product-add",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-product-category-list",
+              "name": "Stock Category List",
+              "slug": "abattoir-stock-category-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        },
+        {
+          "name": "Services",
+          "slug": "app-ecommerce-service",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "app-ecommerce-service-list",
+              "name": "Services List",
+              "slug": "app-ecommerce-service-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-service-add",
+              "name": "Add Services",
+              "slug": "app-ecommerce-service-add",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-service-category-list",
+              "name": "Category List",
+              "slug": "app-ecommerce-service-category-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        },
+        {
+          "name": "Order",
+          "slug": "app-ecommerce-order",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "app-ecommerce-order-list",
+              "name": "Order List",
+              "slug": "app-ecommerce-order-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-order-details",
+              "name": "Order Details",
+              "slug": "app-ecommerce-order-details",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        },
+        {
+          "name": "Customer",
+          "slug": "app-ecommerce-customer",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "app-ecommerce-customer-all",
+              "name": "All Customers",
+              "slug": "app-ecommerce-customer-all",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "name": "Customer Details",
+              "slug": "app-ecommerce-customer-details",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+              "submenu": [
+                {
+                  "url": "app-ecommerce-customer-details-overview",
+                  "name": "Overview",
+                  "slug": "app-ecommerce-customer-details-overview",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                },
+                {
+                  "url": "app-ecommerce-customer-details-security",
+                  "name": "Security",
+                  "slug": "app-ecommerce-customer-details-security",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                },
+                {
+                  "url": "app-ecommerce-customer-details-billing",
+                  "name": "Address & Billing",
+                  "slug": "app-ecommerce-customer-details-billing",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                },
+                {
+                  "url": "app-ecommerce-customer-details-notifications",
+                  "name": "Notifications",
+                  "slug": "app-ecommerce-customer-details-notifications",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "url": "app-ecommerce-referrals",
+          "name": "Referrals",
+          "slug": "app-ecommerce-referrals",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "name": "Settings",
+          "slug": "app-ecommerce-settings",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "app-ecommerce-settings-detail",
+              "name": "Store details",
+              "slug": "app-ecommerce-settings-detail",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-settings-payments",
+              "name": "Payments",
+              "slug": "app-ecommerce-settings-payments",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-settings-checkout",
+              "name": "Checkout",
+              "slug": "app-ecommerce-settings-checkout",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-settings-shipping",
+              "name": "Shipping & Delivery",
+              "slug": "app-ecommerce-settings-shipping",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-settings-locations",
+              "name": "Locations",
+              "slug": "app-ecommerce-settings-locations",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-settings-notifications",
+              "name": "Notifications",
+              "slug": "app-ecommerce-settings-notifications",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AgriBizLedger",
+      "slug": "business-portal",
+      "icon": "menu-icon tf-icons mdi mdi-cart-outline",
+      "submenu": [
+        {
+          "url": "business-portal-dashboard",
+          "name": "Analytics",
+          "slug": "business-portal-dashboard",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "name": "Products",
+          "slug": "business-portal-product",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+
+            {
+              "url": "business-portal-product-list",
+              "name": "Product List",
+              "slug": "business-portal-product-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "business-portal-product-add",
+              "name": "Add Product",
+              "slug": "business-portal-product-add",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "business-portal-product-category-list",
+              "name": "Category List",
+              "slug": "business-portal-product-category-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        },
+        {
+          "name": "Services",
+          "slug": "business-portal-service",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "business-portal-service-list",
+              "name": "Services List",
+              "slug": "business-portal-service-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "business-portal-service-add",
+              "name": "Add Services",
+              "slug": "business-portal-service-add",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "business-portal-service-category-list",
+              "name": "Category List",
+              "slug": "business-portal-service-category-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        },
+        {
+          "name": "Order",
+          "slug": "business-portal-order",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "business-portal-order-list",
+              "name": "Order List",
+              "slug": "business-portal-order-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "business-portal-order-details",
+              "name": "Order Details",
+              "slug": "business-portal-order-details",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        },
+        {
+          "name": "Customer",
+          "slug": "business-portal-customer",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "business-portal-customer-all",
+              "name": "All Customers",
+              "slug": "business-portal-customer-all",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "name": "Customer Details",
+              "slug": "business-portal-customer-details",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+              "submenu": [
+                {
+                  "url": "business-portal-customer-details-overview",
+                  "name": "Overview",
+                  "slug": "business-portal-customer-details-overview",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                },
+                {
+                  "url": "business-portal-customer-details-security",
+                  "name": "Security",
+                  "slug": "business-portal-customer-details-security",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                },
+                {
+                  "url": "business-portal-customer-details-billing",
+                  "name": "Address & Billing",
+                  "slug": "business-portal-customer-details-billing",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                },
+                {
+                  "url": "business-portal-customer-details-notifications",
+                  "name": "Notifications",
+                  "slug": "business-portal-customer-details-notifications",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "url": "business-portal-manage-reviews",
+          "name": "Manage Reviews",
+          "slug": "business-portal-manage-reviews",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "url": "business-portal-referrals",
+          "name": "Referrals",
+          "slug": "business-portal-referrals",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "name": "Settings",
+          "slug": "business-portal-settings",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "business-portal-settings-detail",
+              "name": "Store details",
+              "slug": "business-portal-settings-detail",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "business-portal-settings-payments",
+              "name": "Payments",
+              "slug": "business-portal-settings-payments",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "business-portal-settings-shipping",
+              "name": "Shipping & Delivery",
+              "slug": "business-portal-settings-shipping",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "business-portal-settings-locations",
+              "name": "Locations",
+              "slug": "business-portal-settings-locations",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "business-portal-settings-notifications",
+              "name": "Notifications",
+              "slug": "business-portal-settings-notifications",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TradeLedger",
+      "slug": "app-ecommerce",
+      "icon": "menu-icon tf-icons mdi mdi-cart-outline",
+      "submenu": [
+        {
+          "url": "app-ecommerce-dashboard",
+          "name": "Dashboard",
+          "slug": "app-ecommerce-dashboard",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "name": "Products",
+          "slug": "app-ecommerce-product",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "app-ecommerce-product-list",
+              "name": "Product List",
+              "slug": "app-ecommerce-product-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-product-add",
+              "name": "Add Product",
+              "slug": "app-ecommerce-product-add",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-product-category-list",
+              "name": "Category List",
+              "slug": "app-ecommerce-product-category-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        },
+        {
+          "name": "Services",
+          "slug": "app-ecommerce-service",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "app-ecommerce-service-list",
+              "name": "Services List",
+              "slug": "app-ecommerce-service-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-service-add",
+              "name": "Add Services",
+              "slug": "app-ecommerce-service-add",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-service-category-list",
+              "name": "Category List",
+              "slug": "app-ecommerce-service-category-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        },
+        {
+          "name": "Order",
+          "slug": "app-ecommerce-order",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "app-ecommerce-order-list",
+              "name": "Order List",
+              "slug": "app-ecommerce-order-list",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-order-details",
+              "name": "Order Details",
+              "slug": "app-ecommerce-order-details",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        },
+        {
+          "name": "Customer",
+          "slug": "app-ecommerce-customer",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "app-ecommerce-customer-all",
+              "name": "All Customers",
+              "slug": "app-ecommerce-customer-all",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "name": "Customer Details",
+              "slug": "app-ecommerce-customer-details",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+              "submenu": [
+                {
+                  "url": "app-ecommerce-customer-details-overview",
+                  "name": "Overview",
+                  "slug": "app-ecommerce-customer-details-overview",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                },
+                {
+                  "url": "app-ecommerce-customer-details-security",
+                  "name": "Security",
+                  "slug": "app-ecommerce-customer-details-security",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                },
+                {
+                  "url": "app-ecommerce-customer-details-billing",
+                  "name": "Address & Billing",
+                  "slug": "app-ecommerce-customer-details-billing",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                },
+                {
+                  "url": "app-ecommerce-customer-details-notifications",
+                  "name": "Notifications",
+                  "slug": "app-ecommerce-customer-details-notifications",
+                  "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "url": "app-ecommerce-manage-reviews",
+          "name": "Manage Reviews",
+          "slug": "app-ecommerce-manage-reviews",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "url": "app-ecommerce-referrals",
+          "name": "Referrals",
+          "slug": "app-ecommerce-referrals",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "name": "Settings",
+          "slug": "app-ecommerce-settings",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "app-ecommerce-settings-detail",
+              "name": "Store details",
+              "slug": "app-ecommerce-settings-detail",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-settings-payments",
+              "name": "Payments",
+              "slug": "app-ecommerce-settings-payments",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-settings-checkout",
+              "name": "Checkout",
+              "slug": "app-ecommerce-settings-checkout",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-settings-shipping",
+              "name": "Shipping & Delivery",
+              "slug": "app-ecommerce-settings-shipping",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-settings-locations",
+              "name": "Locations",
+              "slug": "app-ecommerce-settings-locations",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-ecommerce-settings-notifications",
+              "name": "Notifications",
+              "slug": "app-ecommerce-settings-notifications",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "KnowLedger",
+      "icon": "menu-icon tf-icons mdi mdi-notebook-outline",
+      "slug": "app-academy",
+      "submenu": [
+        {
+          "url": "app-academy-dashboard",
+          "name": "Dashboard",
+          "slug": "app-academy-dashboard",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "url": "app-academy-course",
+          "name": "My Course",
+          "slug": "app-academy-course",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "url": "app-academy-course-details",
+          "name": "Course Details",
+          "slug": "app-academy-course-details",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        }
+      ]
+    },
+    {
+      "name": "Logistics",
+      "icon": "menu-icon tf-icons mdi mdi-truck-outline",
+      "slug": "app-logistics",
+      "submenu": [
+        {
+          "url": "app-logistics-dashboard",
+          "name": "Dashboard",
+          "slug": "app-logistics-dashboard",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "url": "app-logistics-fleet",
+          "name": "Fleet",
+          "slug": "app-logistics-fleet",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        }
+      ]
+    },
+    {
+      "name": "Invoice",
+      "icon": "menu-icon tf-icons mdi mdi-file-document-outline",
+      "slug": "app-invoice",
+      "submenu": [
+        {
+          "url": "app-invoice-list",
+          "name": "List",
+          "slug": "app-invoice-list",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "url": "app-invoice-preview",
+          "name": "Preview",
+          "slug": "app-invoice-preview",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "url": "app-invoice-edit",
+          "name": "Edit",
+          "slug": "app-invoice-edit",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "url": "app-invoice-add",
+          "name": "Add",
+          "slug": "app-invoice-add",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        }
+      ]
+    },
+    {
+      "name": "KYCLedger",
+      "icon": "menu-icon tf-icons mdi mdi-account-outline",
+      "permission": "user.view_user",
+      "slug": "app-user",
+      "role": "admin",
+      "submenu": [        {
+        "url": "akyc-profiles-add",
+        "name": "Add profile",
+        "slug": "akyc-profiles-add",
+        "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+      },
+        {
+          "url": "akyc-profiles",
+          "name": "Profiles List",
+          "slug": "akyc-profiles",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+        },
+        {
+          "name": "View",
+          "slug": "app-user-view",
+          "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px",
+          "submenu": [
+            {
+              "url": "app-user-view-account",
+              "name": "Account",
+              "slug": "app-user-view-account",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-user-view-security",
+              "name": "Security",
+              "slug": "app-user-view-security",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-user-view-billing",
+              "name": "Billing & Plans",
+              "slug": "app-user-view-billing",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-user-view-notifications",
+              "name": "Notifications",
+              "slug": "app-user-view-notifications",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            },
+            {
+              "url": "app-user-view-connections",
+              "name": "Connections",
+              "slug": "app-user-view-connections",
+              "icon": "menu-icon tf-icons mdi mdi-circle-medium mdi-20px"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

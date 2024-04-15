@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}
+ template-questionnairepage 
+{% endblock %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger" >
+    <div class="container">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Self-Publishing Articles</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    </div>
+</nav>
+
+<div class="container  py-5">
+    <style>
+        .card-text a {
+            text-decoration: none; /* Remove underline */
+            color: blue; /* Change the color to black */
+        }
+    </style>
+               <!-- {% for section in page.sections %}
+                    <div class="card mb-3 center-content" style="max-width: 56rem;" >
+                        <div class="card-body">
+                            
+                            <h4 class="card-title">{{ section.value.section_title }}</h4>
+                            <p class="card-text"></p>
+                            {% for question in section.value.questions %}
+                            <p class="card-text">
+                                <li>
+                                    <label for="{{ question.question_text }}">{{ question.question_text }}</label>
+                                    <br>
+                                    {% if question.question_type == 'text' %}
+                                        <input type="text" id="{{ question.question_text }}" name="{{ question.question_text }}" class="form-control">
+                                    {% elif question.question_type == 'multiple_choice' %}
+                                        <!-- Add code for multiple choice input -->
+                                    <!-- {% endif %}
+                                </li>
+
+                            {% endfor %}
+                {% endfor %} --> 
+
+                <form method="post" action="/submit_response/">
+                    {% csrf_token %}
+                    {% for section in page.sections %}
+                        <div class="card mb-3 center-content" style="max-width: 56rem;">
+                            <div class="card-body">
+                                <h4 class="card-title">{{ section.value.section_title }}</h4>
+                                <p class="card-text"></p>
+                                {% for question in section.value.questions %}
+                                    <p class="card-text">
+                                        <li>
+                                            <label for="{{ question.question_text }}">{{ question.question_text }}</label>
+                                            <br>
+                                            {% if question.question_type == 'text' %}
+                                                <input type="text" id="{{ question.question_text }}" name="{{ question.question_text }}" class="form-control">
+                                            {% elif question.question_type == 'multiple_choice' %}
+                                                <!-- Add code for multiple choice input -->
+                                            {% endif %}
+                                        </li>
+                                    </p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                    <button type="submit" class="btn btn-danger">Save</button>
+                </form>
+                                
+                               
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+{% endblock %}
