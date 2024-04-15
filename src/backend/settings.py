@@ -57,12 +57,6 @@ X_FRAME_OPTIONS = "SAMEORIGIN"  # allows you to use modals insated of popups
 SILENCED_SYSTEM_CHECKS = ["security.W019"]  # ignores redundant warning messages
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# uncomment change here
-# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.join(BASE_DIR, 'beetrootappfirebaseadminsdk.json')
-# FIREBASE_CREDENTIALS = service_account.Credentials.from_service_account_file(
-#     os.path.join(BASE_DIR, 'beetrootappfirebaseadminsdk.json')
-# )
-
 
 # cred = credentials.Certificate(os.path.join(BASE_DIR, 'beetrootappfirebaseadminsdk.json'))
 # firebase_admin.initialize_app(cred)
